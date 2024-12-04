@@ -26,7 +26,7 @@
                     <TextBox Name="txtTenHangXe" Width="250" />
                 </StackPanel>
                 <Button Name="btnSearch" Content="_Tìm kiếm" Width="100" Margin="5" Click="btnSearch_Click"/>
-                <Button Name="btnBack" Content="_Quay lại" Width="100" Margin="5" Click="btnSearch_Click"/>
+                <Button Name="btnBack" Content="_Quay lại" Width="100" Margin="5" Click="btnBack_Click"/>
             </StackPanel>
         </GroupBox>
 

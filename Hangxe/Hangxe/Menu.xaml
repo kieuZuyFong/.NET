@@ -1,0 +1,15 @@
+﻿<Window x:Class="QLHangxe.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu Chính" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Nút Thêm hãng xe -->
+            <Button Content="Thêm hãng xe" Width="150" Height="40" Click="BtnAddCarBrand_Click"/>
+            <!-- Nút Thêm tài xế -->
+            <Button Content="Thêm tài xế" Width="150" Height="40"/>
+            <!-- Nút Trang chủ -->
+            <Button Content="Trang chủ" Width="150" Height="40"/>
+        </StackPanel>
+    </Grid>
+</Window>

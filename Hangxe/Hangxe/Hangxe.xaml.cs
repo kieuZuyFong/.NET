@@ -217,5 +217,12 @@ namespace QLHangxe
             btnEdit.IsEnabled = false;
             btnDelete.IsEnabled = false;
         }
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Menu MenuWindow = new Menu();
+            MenuWindow.ShowDialog();
+            this.Show();
+        }
     }
 }

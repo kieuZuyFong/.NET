@@ -53,3 +53,6 @@ D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\refint\BTL.dll
 D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\BTL.pdb
 D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\BTL.genruntimeconfig.cache
 D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\ref\BTL.dll
+D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\BTL.sourcelink.json
+D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\Menu.baml
+D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\Menu.g.cs
