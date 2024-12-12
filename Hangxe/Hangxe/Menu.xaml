@@ -6,8 +6,8 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <!-- Nút Thêm hãng xe -->
             <Button Content="Thêm hãng xe" Width="150" Height="40" Click="BtnAddCarBrand_Click"/>
-            <!-- Nút Thêm tài xế -->
-            <Button Content="Thêm tài xế" Width="150" Height="40"/>
+            <!-- Nút Thêm người dùng -->
+            <Button Content="Quản lý người dùng" Width="150" Height="40" Click="BtnAddUser_Click"/>
             <!-- Nút Trang chủ -->
             <Button Content="Trang chủ" Width="150" Height="40"/>
         </StackPanel>

@@ -56,3 +56,5 @@ D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\ref\BTL.dll
 D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\BTL.sourcelink.json
 D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\Menu.baml
 D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\Menu.g.cs
+D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\User.baml
+D:\BTL\Hangxe\Hangxe\obj\Debug\net9.0-windows\User.g.cs

@@ -1,0 +1,91 @@
+﻿<Window x:Class="QLHangxe.User"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Quản Lý Khách Hàng" Height="555" Width="910">
+    <Grid>
+        <!-- Định nghĩa hàng và cột -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="559"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Header tìm kiếm -->
+        <GroupBox Header="Tìm kiếm" Grid.Row="0" Grid.ColumnSpan="2" Margin="5,5,5,5" Padding="5">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="UserId" />
+                    <TextBox Name="txtUserId" Width="150" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="UserName" />
+                    <TextBox Name="txtUserName" Width="250" />
+                </StackPanel>
+                <Button Name="btnSearch" Content="_Tìm kiếm" Width="100" Margin="5" Click="btnSearch_Click"/>
+                <Button Name="btnBack" Content="_Quay lại" Width="100" Margin="5" Click="btnBack_Click"/>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Danh sách-->
+        <DataGrid Name="dgvUsers" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                  AutoGenerateColumns="False" SelectionChanged="dgvUsers_SelectionChanged" Margin="5,5,5,5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="UserId" Binding="{Binding UserId}" Width="50"/>
+                <DataGridTextColumn Header="UserName" Binding="{Binding UserName}" Width="145"/>
+                <DataGridTextColumn Header="Age" Binding="{Binding Age}" Width="50"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="145"/>
+                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="145"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Chi tiết-->
+        <GroupBox Header="Chi tiết" Grid.Row="1" Grid.Column="1" Margin="0,80,20,10" Padding="5">
+            <StackPanel RenderTransformOrigin="0.5,0.5" Height="267">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.094"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="UserId" />
+                    <TextBox Name="txtUserIdDetail" IsReadOnly="True" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="UserName" />
+                    <TextBox Name="txtUserNameDetail" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Age" />
+                    <TextBox Name="txtAge" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Address" />
+                    <TextBox Name="txtAddress" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Phone" />
+                    <TextBox Name="txtPhone" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                    <Button Name="btnSave" Content="_Lưu" Width="75" Margin="5" Click="btnSave_Click"/>
+                    <Button Name="btnCancel" Content="_Huỷ" Width="75" Margin="5" Click="btnCancel_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Nút chức năng -->
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="0,5,0,5" Width="330">
+            <Button Name="btnAdd" Content="_Thêm" Width="100" Margin="5" Click="btnAdd_Click"/>
+            <Button Name="btnEdit" Content="_Sửa" Width="100" Margin="5" Click="btnEdit_Click" IsEnabled="False"/>
+            <Button Name="btnDelete" Content="_Xoá" Width="100" Margin="5" Click="btnDelete_Click" IsEnabled="False"/>
+        </StackPanel>
+    </Grid>
+</Window>
